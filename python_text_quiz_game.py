@@ -2,25 +2,40 @@
 Python game project made with freecodecamp.org and Tech with Tim
 
 '''
-
-
 print ("Welcome to the game!") #print statement
 name = str(input("What is your name? ")) #input statement
 print ('Are you sure', name ,' is your name?') #prints the name in the sentenace
 user_name_confirm=input()
+#confirmation_screen(user_name_confirm)
 
-if user_name_confirm =="yes":
-    print("Lets continue ",name)
+#def confirmation_screen(user_name_confirm):
     
+if user_name_confirm =="yes" or "Yes":
+    print("Lets continue ",name)
+    game_age_checker()
 
-else:
+elif user_name_confirm =="No" or "no":
     print("Would you like to change your name? ")
     user_choice_2=input()
+
     if user_choice_2 =="yes":
-        str(input('Enter your new name, we promise not to judge: '))
+        user_new_name=str(input('Enter your new name, we promise not to judge: '))
         game_age_checker()
-    else:
+        
+    elif user_choice_2:
         game_age_checker()
+
+else:
+    print('Sorry I dont understand')
+    #welcome_screen()
+
+
+def welcome_screen():
+    print ("Welcome to the game!") #print statement
+    name = str(input("What is your name? ")) #input statement
+    print ('Are you sure', name ,' is your name?') #prints the name in the sentenace
+    user_name_confirm=input()
+    #confirmation_screen(user_name_confirm)
         
 
 
