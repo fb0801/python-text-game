@@ -53,7 +53,7 @@ def quiz_end():
 def game_age_checker(name):
     '''game age checker function'''
     user_age=str(input('Are you over 18 years old to play the game? '))
-    user_age_input_2 = int(input('Please enter your age: '))
+    user_age_input_2 = input('Please enter your age: ')
 
     if user_age_input_2 >= 18:
         print('Even if you lied we arent responible happy gaming')
@@ -64,9 +64,10 @@ def game_age_checker(name):
             
 
     else:
-        while user_age_input.isdigit() ==True:
-            try:
-                user_age_input_2 = int(input('Please enter your age: '))
+        while True:
+            game_age_checker(name)
+        #while user_age_input.isdigit() ==True:
+        '''user_age_input_2 = int(input('Please enter your age: '))
 
                 if user_age_input_2 >= 18:
                     print('Even if you lied we arent responible happy gaming')
@@ -74,10 +75,11 @@ def game_age_checker(name):
         
                 elif user_age_input_2 < 18:
                     print('Sorry', name, ' you are too young to play this game')
+            
 
                 else:
                     print('You can not play this game')
-            #game_age_checker(name)
+            #game_age_checker(name)'''
         #quiz_end()
 
 def quiz_start(name):
