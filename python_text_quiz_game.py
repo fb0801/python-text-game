@@ -3,7 +3,7 @@ Python game project made with freecodecamp.org and Tech with Tim
 
 '''
 
-
+random_game_names =['Jimmy', 'Lord uncool', '']
 
 
 def game_name_change():
@@ -48,12 +48,12 @@ else:
 
 
 def quiz_end():
-    print("This is the end")
+    print("This is the end \n This is the end \n Beautiful friend \n This is the end \n My only friend, the end")
 
 def game_age_checker(name):
     '''game age checker function'''
     user_age=str(input('Are you over 18 years old to play the game? '))
-    user_age_input_2 = input('Please enter your age: ')
+    user_age_input_2 = int(input('Please enter your age: '))
 
     if user_age_input_2 >= 18:
         print('Even if you lied we arent responible happy gaming')
@@ -64,8 +64,9 @@ def game_age_checker(name):
             
 
     else:
-        while True:
-            game_age_checker(name)
+        print('Sorry i dont understand what you have said')
+        #while True:
+        game_age_checker(name)
         #while user_age_input.isdigit() ==True:
         '''user_age_input_2 = int(input('Please enter your age: '))
 
@@ -83,12 +84,15 @@ def game_age_checker(name):
         #quiz_end()
 
 def quiz_start(name):
+    health =10
     #function for the quiz game to begin
-   
+    print('You will have 10 health')
     print("Before your journey", name ,'can continue select your type class')
-    print('Archer-')
+    print('Archer-(A)')
+    print('Wizard -(W)')
+    print('')
     
-
+    
 
 
 
@@ -110,6 +114,11 @@ def welcome_screen():
         user_choice_2 =str(input())
         if user_choice_2 == 'yes' or user_choice_2 == 'Yes':
             game_name_change()
+        elif user_choice_2 == 'no' or user_choice_2 == 'No':
+            game_age_checker(name)
+        else:
+            print('Sorry I dont understand')
+            welcome_screen()
 
     else:
         print('Sorry I dont understand')
