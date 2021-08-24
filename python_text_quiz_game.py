@@ -48,7 +48,7 @@ else:
 
 
 def quiz_end():
-    print("This is the end \n This is the end \n Beautiful friend \n This is the end \n My only friend, the end")
+    print("\n This is the end \n Beautiful friend \n This is the end \n My only friend, the end")
 
 def game_age_checker(name):
     '''game age checker function'''
