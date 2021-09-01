@@ -91,7 +91,7 @@ def quiz_start(name):
     print('Archer-(A)')
     print('Wizard -(W)')
     print('Lancer -(L)')
-    input('Choose your adventure Class: ')
+    input('Choose your adventure Class from the list above with the corresponding letter: ')
     
     
 
