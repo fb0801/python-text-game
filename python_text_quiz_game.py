@@ -3,7 +3,10 @@ Python game project made with freecodecamp.org and Tech with Tim
 
 '''
 
-random_game_names =['Jimmy', 'Lord uncool', '']#random game names for the user
+#random game names for the user
+random_game_names =['Jimmy', 'Lord uncool', 'Prince Fluffy', 'Princess Jigsaw']
+
+# game classes for user to choose from
 character_class_list ={
 "A":"Archer",
 "C":"Caster",
@@ -12,8 +15,8 @@ character_class_list ={
 "R":"Rider",
 "AA":"Assassin",
 "B":"Beserker",
-
-    }# game classes for user to choose from
+"W":"Wizard"
+    }
 
 def game_name_change():
     '''Game name changer function'''
