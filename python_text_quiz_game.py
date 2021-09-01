@@ -30,26 +30,41 @@ def game_name_change():
 
 
 def quiz_end():
-    #function for ending the quiz
+    #function for ending the game
     print("\n This is the end \n Beautiful friend \n This is the end \n My only friend, the end")
 
 def game_age_checker(name):
     '''game age checker function'''
-    user_age=str(input('Are you over 18 years old to play the game? '))
-    user_age_input_2 = int(input('Please enter your age: '))
+    user_age=str(input('Are you over 18 years old to play the game? ')).upper()
+    if user_age == 'YES':
+        user_age_input_2 = int(input('Please enter your age: '))
 
-    if user_age_input_2 >= 18:
-        print('Even if you lied we arent responible happy gaming')
-        quiz_start(name)
+        if user_age_input_2 >= 18:
+            print('Even if you lied we arent responible happy gaming')
+            quiz_start(name)
+        
+        elif user_age_input_2 < 18:
+            print('Sorry', name, ' you are too young to play this game')
+            
+
+        else:
+            print('Sorry i dont understand what you have said')
+            #while True:
+            game_age_checker(name)
+            print('Even if you lied we arent responible happy gaming')
+            quiz_start(name)
         
     elif user_age_input_2 < 18:
         print('Sorry', name, ' you are too young to play this game')
-            
 
     else:
         print('Sorry i dont understand what you have said')
         #while True:
         game_age_checker(name)
+        
+
+    
+    
         #while user_age_input.isdigit() ==True:
         '''user_age_input_2 = int(input('Please enter your age: '))
 
@@ -71,9 +86,10 @@ def quiz_start(name):
     #function for the quiz game to begin
     print('You will have 10 health')
     print("Before your journey", name ,'can continue select your type class by entering the class letter')
-    print('Archer-(A)')
-    print('Wizard -(W)')
-    print('Lancer -(L)')
+    print (character_class_list)
+    #print('Archer-(A)')
+    #print('Wizard -(W)')
+    #print('Lancer -(L)')
     input('Choose your adventure Class from the list above with the corresponding letter: ')
     
     
