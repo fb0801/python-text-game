@@ -51,8 +51,7 @@ def game_age_checker(name):
             print('Sorry i dont understand what you have said')
             #while True:
             game_age_checker(name)
-            print('Even if you lied we arent responible happy gaming')
-            quiz_start(name)
+            
         
     elif user_age =="NO":
         print('Sorry', name, ' you are too young to play this game')
