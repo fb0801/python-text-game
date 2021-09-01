@@ -21,29 +21,6 @@ def game_name_change():
         game_name_change()
 
 
-'''
-print ("Welcome to the game!") #print statement
-name = str(input("What is your name? ")) #input statement
-print ('Are you sure', name ,' is your name?') #prints the name in the sentenace
-user_name_confirm=input()
-#confirmation_screen(user_name_confirm)
-
-#def confirmation_screen(user_name_confirm):
-    
-if user_name_confirm =="yes" or user_name_confirm=="Yes":
-    print("Lets continue ",name)
-    game_age_checker()
-
-elif user_name_confirm =="No" or user_name_confirm=="no":
-    print("Would you like to change your name? ")
-    user_choice_2=input()
-    game_name_change()
-
-else:
-    print('Sorry I dont understand')
-    #welcome_screen()
-'''
-
 
 
 
