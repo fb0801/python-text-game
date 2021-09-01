@@ -6,9 +6,11 @@ Python game project made with freecodecamp.org and Tech with Tim
 random_game_names =['Jimmy', 'Lord uncool', '']
 character_class_list ={
 "A":"Archer",
-"W":"wizard",
+"C":"Caster",
 "L":"Lancer",
 "S":"Saber",
+"R":"Rider",
+"AA":"Assassin",
     }
 
 def game_name_change():
