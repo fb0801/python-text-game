@@ -4,7 +4,12 @@ Python game project made with freecodecamp.org and Tech with Tim
 '''
 
 random_game_names =['Jimmy', 'Lord uncool', '']
-
+character_class_list ={
+"A":"Archer",
+"W":"wizard",
+"L":"Lancer",
+"S":"Saber",
+    }
 
 def game_name_change():
     '''Game name changer function'''
@@ -25,6 +30,7 @@ def game_name_change():
 
 
 def quiz_end():
+    #function for ending the quiz
     print("\n This is the end \n Beautiful friend \n This is the end \n My only friend, the end")
 
 def game_age_checker(name):
