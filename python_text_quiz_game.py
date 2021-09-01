@@ -87,10 +87,11 @@ def quiz_start(name):
     health =10
     #function for the quiz game to begin
     print('You will have 10 health')
-    print("Before your journey", name ,'can continue select your type class')
+    print("Before your journey", name ,'can continue select your type class by entering the class letter')
     print('Archer-(A)')
     print('Wizard -(W)')
-    print('')
+    print('Lancer -(L)')
+    input('Choose your adventure Class: ')
     
     
 
@@ -128,5 +129,5 @@ def welcome_screen():
 
 #runs the first function we have made above
 if __name__=='__main__':
-    welcome_screen().run()
+    welcome_screen()
     
