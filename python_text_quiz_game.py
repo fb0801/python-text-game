@@ -28,16 +28,16 @@ def game_name_change():
     '''Game name changer function'''
     user_choice=str(input("Would you like us to give you a name?: ")).lower()
     if user_choice == "yes":
-        random_name = random.randint(0,5)
-        game_name_pick= random_game_names[random_name]
+        random_name = random.randint(0,5) #assign random a range
+        game_name_pick= random_game_names[random_name] #access the list we have created
         print('Your new name is', game_name_pick, '\n')
-        game_age_checker(game_name_pick)
+        game_age_checker(game_name_pick)#function call
         
     elif user_choice =="no":
         user_new_name=str(input('Enter your new name, we promise not to judge: '))
         name_checker =isinstance(user_new_name, str)
         if name_checker == True:
-        game_age_checker(user_new_name)
+            game_age_checker(user_new_name)
         
    # elif user_choice_2:
     #    game_age_checker()
