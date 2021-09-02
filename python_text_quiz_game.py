@@ -7,9 +7,9 @@ import random #import random module
 
 
 #random game names for the user
-random_game_names =['Jimmy', 'Levi','Eren','Lord uncool', 'Prince Fluffy', 'Princess Jigsaw']
+random_game_names =['Jimmy', 'Levi','Princess James','','Eren','Lord uncool', 'Prince Fluffy', 'Princess Jigsaw']
 
-banned_game_names =[]
+banned_game_names =['Slender man']
 
 
 # game classes for user to choose from
@@ -28,7 +28,7 @@ def game_name_change():
     '''Game name changer function'''
     user_choice=str(input("Would you like us to give you a name?: ")).lower()
     if user_choice == "yes":
-        random_name = random.randint(0,5) #assign random a range
+        random_name = random.randint(0,7) #assign random a range
         game_name_pick= random_game_names[random_name] #access the list we have created
         print('Your new name is', game_name_pick, '\n')
         game_age_checker(game_name_pick)#function call
