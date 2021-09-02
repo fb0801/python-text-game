@@ -95,8 +95,7 @@ def quiz_start(name):
     print("Before your journey", name ,'can continue select your type class by entering the class letter')
     print (character_class_list)
     #print('Archer-(A)')
-    #print('Wizard -(W)')
-    #print('Lancer -(L)')
+    
     input('Choose your adventure Class from the list above with the corresponding letter: ')
     
     
