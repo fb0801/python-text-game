@@ -20,6 +20,7 @@ character_class_list ={
 
 def game_name_change():
     '''Game name changer function'''
+    str(input("Would you like us to give you a name?: "))
     user_new_name=str(input('Enter your new name, we promise not to judge: '))
     name_checker =isinstance(user_new_name, str)
     if name_checker == True:
