@@ -9,7 +9,7 @@ import random #import random module
 #random game names for the user
 random_game_names =['Jimmy', 'Levi','Princess James','Lady Bailey','Eren','Lord uncool', 'Prince Fluffy', 'Princess Jigsaw']
 
-banned_game_names =['Slender man']
+banned_game_names =['Slender man', 'gingerbread man', 'name']
 
 
 # game classes for user to choose from
@@ -110,7 +110,7 @@ def welcome_screen():
     name = input("What is your name? ") #input statement
     print ('Are you sure', name ,' is your name? ') #prints the name in the sentenace
     user_name_confirm=str(input())
-    #confirmation_screen(user_name_confirm)
+    
         
     if user_name_confirm =="yes" or user_name_confirm=="Yes":
         print("Lets continue ",name)
