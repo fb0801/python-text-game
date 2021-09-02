@@ -3,8 +3,14 @@ Python game project made with freecodecamp.org and Tech with Tim
 
 '''
 
+import random #import random module
+
+
 #random game names for the user
 random_game_names =['Jimmy', 'Lord uncool', 'Prince Fluffy', 'Princess Jigsaw']
+
+banned_game_names =[]
+
 
 # game classes for user to choose from
 character_class_list ={
@@ -20,11 +26,15 @@ character_class_list ={
 
 def game_name_change():
     '''Game name changer function'''
-    user_choice=str(input("Would you like us to give you a name?: "))
-    if user_choice
-    user_new_name=str(input('Enter your new name, we promise not to judge: '))
-    name_checker =isinstance(user_new_name, str)
-    if name_checker == True:
+    user_choice=str(input("Would you like us to give you a name?: ")).lower()
+    if user_choice == "yes":
+        game_name_pick= random_game_names[]
+        print('Your new name is', game_name_pick, '\n')
+        
+    elif user_choice =="no":
+        user_new_name=str(input('Enter your new name, we promise not to judge: '))
+        name_checker =isinstance(user_new_name, str)
+        if name_checker == True:
         game_age_checker(user_new_name)
         
    # elif user_choice_2:
@@ -41,6 +51,8 @@ def game_name_change():
 def quiz_end():
     #function for ending the game
     print("\n This is the end \n Beautiful friend \n This is the end \n My only friend, the end")
+
+
 
 def game_age_checker(name):
     '''game age checker function'''
