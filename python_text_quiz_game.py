@@ -21,7 +21,8 @@ character_class_list ={
 "R":"Rider",
 "AA":"Assassin",
 "B":"Beserker",
-"W":"Wizard"
+"W":"Wizard",
+"X":"Random character"
     }
 
 def game_name_change():
@@ -96,7 +97,7 @@ def quiz_start(name):
     print (character_class_list)
     #print('Archer-(A)')
     
-    input('Choose your adventure Class from the list above with the corresponding letter: ')
+    user_class_type=input('Choose your adventure Class from the list above with the corresponding letter: ')
     
     
 
