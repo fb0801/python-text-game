@@ -9,7 +9,8 @@ import random #import random module
 #random game names for the user
 random_game_names =['Jimmy', 'Levi','Princess James','Lady Bailey','Eren','Lord uncool', 'Prince Fluffy', 'Princess Jigsaw']
 
-banned_game_names =['Slender man', 'gingerbread man', 'name',69, 'Mr T']
+banned_game_names =['Slender man', 'gingerbread man', 'name',69, 'Mr T', 'max'
+                    ,'min', 'range']
 
 
 # game classes for user to choose from
@@ -113,8 +114,8 @@ def welcome_screen():
     
         
     if user_name_confirm =="yes" or user_name_confirm=="Yes":
-        for bgn in banned_game_names:
-            if bgn == name:
+        for b_g_n in banned_game_names:
+            if name in banned_game_names:
                 print('Sorry you cant use that name \n')
                 welcome_screen()                
             else:
