@@ -9,7 +9,7 @@ import random #import random module
 #random game names for the user
 random_game_names =['Jimmy', 'Levi','Princess James','Lady Bailey','Eren','Lord uncool', 'Prince Fluffy', 'Princess Jigsaw']
 
-banned_game_names =['Slender man', 'gingerbread man', 'name']
+banned_game_names =['Slender man', 'gingerbread man', 'name',69, 'Mr T']
 
 
 # game classes for user to choose from
