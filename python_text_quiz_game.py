@@ -113,8 +113,13 @@ def welcome_screen():
     
         
     if user_name_confirm =="yes" or user_name_confirm=="Yes":
-        print("Lets continue ",name)
-        game_age_checker(name)
+        for bgn in banned_game_names:
+            if bgn == name:
+                print('Sorry you cant use that name \n')
+                welcome_screen()                
+            else:
+                print("Lets continue ",name)
+                game_age_checker(name)
 
     elif user_name_confirm =="No" or user_name_confirm=="no":
         print("Would you like to change your name? ")
