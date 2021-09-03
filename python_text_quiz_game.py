@@ -115,7 +115,8 @@ def welcome_screen():
         
     if user_name_confirm =="yes" or user_name_confirm=="Yes":
         for b_g_n in banned_game_names:
-            if name in banned_game_names:
+            if b_g_n == name:
+            #if name in banned_game_names:
                 print('Sorry you cant use that name \n')
                 welcome_screen()                
             else:
