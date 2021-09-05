@@ -95,12 +95,13 @@ def game_age_checker(name):
 def quiz_start(name):
     health =10
     #function for the quiz game to begin
-    print('You will have 10 health')
+    print(f'You will have {health} health points')
     print("Before your journey", name ,'can continue select your type class by entering the class letter')
     print (character_class_list)
     #print('Archer-(A)')
     
     user_class_type=input('Choose your adventure Class from the list above with the corresponding letter: ')
+    
     
     
 
