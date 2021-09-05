@@ -40,6 +40,7 @@ def game_name_change():
         user_new_name=str(input('Enter your new name, we promise not to judge: '))
         name_checker =isinstance(user_new_name, str)
         if name_checker == True:
+            print(f'We could have given you a better name {user_new_name}')
             game_age_checker(user_new_name)
         
    # elif user_choice_2:
