@@ -66,18 +66,25 @@ def game_age_checker(name):
     if user_age == 'YES':
         user_age_input_2 = int(input('Please enter your age: '))
 
-        if user_age_input_2 >= 18:
-            print('Even if you lied we arent responible happy gaming')
-            quiz_start(name)
-        
-        elif user_age_input_2 < 18:
-            print('Sorry', name, ' you are too young to play this game')
+        try:
             
 
-        else:
+            if user_age_input_2 >= 18:
+                print('Even if you lied we arent responible happy gaming')
+                quiz_start(name)
+        
+            elif user_age_input_2 < 18:
+                print('Sorry', name, ' you are too young to play this game')
+            
+
+            else:
+                print('Sorry i dont understand what you have said')
+                #while True:
+                game_age_checker(name)
+        except ValueError:
             print('Sorry i dont understand what you have said')
-            #while True:
             game_age_checker(name)
+            
             
         
     elif user_age =="NO":
@@ -102,7 +109,7 @@ def quiz_start(name):
     #print('Archer-(A)')
     
     user_class_type=input('Choose your adventure Class from the list above with the corresponding letter: ')
-    for characters in character_class_list:
+    #for characters in character_class_list:
         
     
     
