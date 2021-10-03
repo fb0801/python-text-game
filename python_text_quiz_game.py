@@ -7,11 +7,12 @@ import random #import random module
 
 
 #random game names for the user
-random_game_names =['Jimmy', 'Levi','Princess James','Lady Bailey','Eren','Lord uncool', 'Prince Fluffy', 'Princess Jigsaw']
+random_game_names =['Jimmy', 'Levi','Princess James','Lady Bailey','Eren','Lord uncool',
+                    'Prince Fluffy', 'Princess Jigsaw', 'Alisha', 'David', 'Elon', 'Doge Musk']
 
 banned_game_names =['Slender man', 'gingerbread man', 'name',69, 'Mr T', 'max'
                     ,'min', 'range', 'yield', 'while', 'return', 'pass', 'none'
-                    ,'and', 'break', 'true', 'false', 'global']
+                    ,'and', 'break', 'true', 'false', 'global', 'pygame', 'pycharm']
 
 
 # game classes for user to choose from
