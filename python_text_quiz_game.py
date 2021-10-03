@@ -12,7 +12,8 @@ random_game_names =['Jimmy', 'Levi','Princess James','Lady Bailey','Eren','Lord 
 
 banned_game_names =['Slender man', 'gingerbread man', 'name',69, 'Mr T', 'max'
                     ,'min', 'range', 'yield', 'while', 'return', 'pass', 'none'
-                    ,'and', 'break', 'true', 'false', 'global', 'pygame', 'pycharm']
+                    ,'and', 'break', 'true', 'false', 'global', 'pygame', 'pycharm',
+                    1,2,3,4,5,6,7,8,9,0]
 
 
 # game classes for user to choose from
