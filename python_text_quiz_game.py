@@ -41,9 +41,12 @@ def game_name_change():
     elif user_choice =="no":
         user_new_name=str(input('Enter your new name, we promise not to judge: '))
         name_checker =isinstance(user_new_name, str)
-        if name_checker == True:
+        if name_checker == True and user_new_name not in banned_game_names:
             print(f'We could have given you a better name {user_new_name}')
             game_age_checker(user_new_name)
+        else:
+            game_name_change()
+
         
    # elif user_choice_2:
     #    game_age_checker()
