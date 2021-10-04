@@ -75,7 +75,7 @@ def game_age_checker(name):
             
 
             if user_age_input_2 >= 18:
-                print('Even if you lied we arent responible happy gaming')
+                print('Even if you lied we arent responible happy gaming!\n')
                 quiz_start(name)
         
             elif user_age_input_2 < 18:
@@ -113,12 +113,12 @@ def quiz_start(name):
     print (character_class_list)
     #print('Archer-(A)')
     
-    user_class_type=input('Choose your adventure Class from the list above with the corresponding letter: ')
-    #for characters in character_class_list:
-        
-    
-    
-
+    user_class_type=input('Choose your adventure Class from the list above with the corresponding letter: ').upper()
+    for characters in character_class_list:
+        if user_class_type in character_class_list:
+            print(user_class_type)
+        else:
+            print('not valid')
 
 
 
