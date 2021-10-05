@@ -117,10 +117,10 @@ def quiz_start(name):
     #for user_class_type,y in character_class_list:
     if user_class_type in character_class_list:
         print(user_class_type ,'is your chosen character')
-    elif user_class_list =='X':
+    elif user_class_type =='X':
         print('random selection')
     else:
-        print('not valid')
+        print('not valid character class')
 
 
 
