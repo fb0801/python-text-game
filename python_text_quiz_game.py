@@ -115,7 +115,7 @@ def quiz_start(name):
     
     user_class_type=input('Choose your adventure Class from the list above with the corresponding letter: ').upper()
     for user_class_type,y in character_class_list:
-        if user_class_type == character_class_list:
+        if user_class_type in character_class_list:
             print(y ,'is your chosen character')
         elif user_class_list =='X':
             print('random selection')
