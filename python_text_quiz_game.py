@@ -13,7 +13,7 @@ random_game_names =['Jimmy', 'Levi','Princess James','Lady Bailey','Eren','Lord 
 banned_game_names =['Slender man', 'gingerbread man', 'name',69, 'Mr T', 'max'
                     ,'min', 'range', 'yield', 'while', 'return', 'pass', 'none'
                     ,'and', 'break', 'true', 'false', 'global', 'pygame', 'pycharm',
-                    1,2,3,4,5,6,7,8,9,0]
+                    1,2,3,4,5,6,7,8,9,0, 'yes', 'no',]
 
 
 # game classes for user to choose from
@@ -118,6 +118,7 @@ def quiz_start(name):
         if user_class_type in character_class_list:
             #char_selc = character_class_list
             print(character_class_list, y,'is your chosen character')
+            break
         elif user_class_type =='X':
             print('random selection')
         else:
