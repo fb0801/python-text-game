@@ -117,7 +117,7 @@ def quiz_start(name):
     if user_class_type in character_class_list:
         if user_class_type == "X":
             user_class_type= random.choice(list(character_class_list.keys()))
-        #char_selc = character_class_list
+        
         print(character_class_list.get(user_class_type),'is your chosen character')
     else:
         print('not valid character class')
