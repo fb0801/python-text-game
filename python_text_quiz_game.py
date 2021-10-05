@@ -111,7 +111,7 @@ def quiz_start(name):
     print(f'You will have {health} health points')
     print("Before your journey", name ,'can continue select your type class by entering the class letter')
     print (character_class_list)
-    #print('Archer-(A)')
+    
     
     user_class_type=input('Choose your adventure Class from the list above with the corresponding letter: ').upper()
     for user_class_type,y in character_class_list:
