@@ -114,14 +114,14 @@ def quiz_start(name):
     #print('Archer-(A)')
     
     user_class_type=input('Choose your adventure Class from the list above with the corresponding letter: ').upper()
-    #for user_class_type,y in character_class_list:
-    if user_class_type in character_class_list:
-        char_selc = character_class_list.value
-        print(character_class_list, char_selc,'is your chosen character')
-    elif user_class_type =='X':
-        print('random selection')
-    else:
-        print('not valid character class')
+    for user_class_type,y in character_class_list:
+        if user_class_type in character_class_list:
+            char_selc = character_class_list.value()[]
+            print(character_class_list, char_selc,'is your chosen character')
+        elif user_class_type =='X':
+            print('random selection')
+        else:
+            print('not valid character class')
 
 
 
